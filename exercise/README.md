@@ -6,7 +6,7 @@
         <li>HTML's <code>&lt;form&gt;</code> submission</li>
         <li>Javascript's <code>fetch</code> function. Use Fiddler for adding an <code>Access-Control-Allow-Origin</code> http header to each response in order to allow CORS</li>
         <li>jQuery's <code>ajax</code> function - using jsonp</li>
-        <li>Add an <code>Authorization</code> http header which includes the value <code>Bearer 123456</code> in items 2 and 3.
+        <li>Add an <code>Authorization</code> http header which includes the value <code>Bearer 123456</code> in items ii and iii.
     </ol>
 </ol>
 
