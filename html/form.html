@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <h3>Please enter your details:</h3>
+        <form action="/api" method="POST">
+            <input name="username" type="text" placeholder="Enter your name..." />
+            <input name="score" type="number" />
+            <input type="text" placeholder="Enter CAPTCHA" />
+            <!-- <input type="hidden" name="token" value="1234" />
+            <input type="password" name="password" />
+            <textarea cols="100" rows="20"></textarea> -->
+            <input type="submit" value="SEND" />
+        </form>
+        <article>
+            <h5>Title 1</h5>
+            <p><pre>
+                Some text...
+        Some text...<h1>Some Title</h1>
+                Some text...
+            </pre></p>
+            <h5>Title 2</h5>
+            <p>
+                    Some text...<br />
+                    Some text...
+                    Some text...
+            </p>
+            <h5>Code Snippet</h5>
+            <p>
+                <code>
+                    var x = 123;<br />
+                    var y = 123;<br />
+                    var z = 123;<br />
+                </code> 
+            </p>
+        </article>
+        <div>Here comes the div</div>
+        <footer>
+            &copy; 2019
+        </footer>
+</body>
+</html>

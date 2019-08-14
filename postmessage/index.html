@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="main-content">
+      <form id="the-form" action="/">
+        <input type="text" id="my-message" value="Your message" />
+        <input type="submit" value="postMessage" />
+      </form>
+
+      <iframe id="da-iframe" src="iframe.html"></iframe>
+
+      <h2>Code used in this page</h2>
+      <div class="syntaxhighlighter " id="highlighter_262983">
+        <div class="bar">
+          <div class="toolbar">
+            <a
+              href="#viewSource"
+              title="view source"
+              class="item viewSource"
+              style="width: 16px; height: 16px;"
+              >view source</a
+            ><a
+              href="#printSource"
+              title="print"
+              class="item printSource"
+              style="width: 16px; height: 16px;"
+              >print</a
+            ><a
+              href="#about"
+              title="?"
+              class="item about"
+              style="width: 16px; height: 16px;"
+              >?</a
+            >
+          </div>
+        </div>
+        <div class="lines">
+          <div class="line alt1">
+            <code class="number">01.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="plain">window.onload = </code
+                ><code class="keyword">function</code>
+                <code class="plain">() {</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">02.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="keyword">var</code>
+                <code class="plain">iframeWin = document.getElementById(</code
+                ><code class="string">"da-iframe"</code
+                ><code class="plain">).contentWindow,</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">03.</code
+            ><span class="content"
+              ><code class="spaces"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 64px !important;"
+                ><code class="plain">form = document.getElementById(</code
+                ><code class="string">"the-form"</code
+                ><code class="plain">),</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">04.</code
+            ><span class="content"
+              ><code class="spaces"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 64px !important;"
+                ><code class="plain">myMessage = document.getElementById(</code
+                ><code class="string">"my-message"</code
+                ><code class="plain">);</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">05.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                >&nbsp;</span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">06.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">myMessage.select();</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">07.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                >&nbsp;</span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">08.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">form.onsubmit = </code
+                ><code class="keyword">function</code>
+                <code class="plain">() {</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">09.</code
+            ><span class="content"
+              ><code class="spaces"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 64px !important;"
+                ><code class="plain"
+                  >iframeWin.postMessage(myMessage.value, </code
+                ><code class="string"
+                  >"<a href="https://robertnyman.com">https://robertnyman.com</a
+                  >"</code
+                ><code class="plain">);</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">10.</code
+            ><span class="content"
+              ><code class="spaces"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 64px !important;"
+                ><code class="keyword">return</code>
+                <code class="keyword">false</code
+                ><code class="plain">;</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">11.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">};</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">12.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="plain">};</code></span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <h2>Code used in the iframe</h2>
+      <div class="syntaxhighlighter " id="highlighter_606785">
+        <div class="bar">
+          <div class="toolbar">
+            <a
+              href="#viewSource"
+              title="view source"
+              class="item viewSource"
+              style="width: 16px; height: 16px;"
+              >view source</a
+            ><a
+              href="#printSource"
+              title="print"
+              class="item printSource"
+              style="width: 16px; height: 16px;"
+              >print</a
+            ><a
+              href="#about"
+              title="?"
+              class="item about"
+              style="width: 16px; height: 16px;"
+              >?</a
+            >
+          </div>
+        </div>
+        <div class="lines">
+          <div class="line alt1">
+            <code class="number">01.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="keyword">function</code>
+                <code class="plain">displayMessage (evt) {</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">02.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="keyword">var</code>
+                <code class="plain">message;</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">03.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="keyword">if</code>
+                <code class="plain">(evt.origin !== </code
+                ><code class="string"
+                  >"<a href="https://robertnyman.com">https://robertnyman.com</a
+                  >"</code
+                ><code class="plain">) {</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">04.</code
+            ><span class="content"
+              ><code class="spaces"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 64px !important;"
+                ><code class="plain">message = </code
+                ><code class="string">"You are not worthy"</code
+                ><code class="plain">;</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">05.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">}</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">06.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="keyword">else</code>
+                <code class="plain">{</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">07.</code
+            ><span class="content"
+              ><code class="spaces"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 64px !important;"
+                ><code class="plain">message = </code
+                ><code class="string">"I got "</code>
+                <code class="plain">+ evt.data + </code
+                ><code class="string">" from "</code>
+                <code class="plain">+ evt.origin;</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">08.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">}</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">09.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">document.getElementById(</code
+                ><code class="string">"received-message"</code
+                ><code class="plain">).innerHTML = message;</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">10.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="plain">}</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">11.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                >&nbsp;</span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">12.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="keyword">if</code>
+                <code class="plain">(window.addEventListener) {</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">13.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="comments"
+                  >// For standards-compliant web browsers</code
+                ></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">14.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">window.addEventListener(</code
+                ><code class="string">"message"</code
+                ><code class="plain">, displayMessage, </code
+                ><code class="keyword">false</code
+                ><code class="plain">);</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">15.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="plain">}</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">16.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="keyword">else</code>
+                <code class="plain">{</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt1">
+            <code class="number">17.</code
+            ><span class="content"
+              ><code class="spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code
+              ><span class="block" style="margin-left: 32px !important;"
+                ><code class="plain">window.attachEvent(</code
+                ><code class="string">"onmessage"</code
+                ><code class="plain">, displayMessage);</code></span
+              ></span
+            >
+          </div>
+          <div class="line alt2">
+            <code class="number">18.</code
+            ><span class="content"
+              ><span class="block" style="margin-left: 0px !important;"
+                ><code class="plain">}</code></span
+              ></span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      window.onload = function() {
+        var iframeWin = document.getElementById("da-iframe").contentWindow,
+          form = document.getElementById("the-form"),
+          myMessage = document.getElementById("my-message");
+
+        myMessage.select();
+
+        form.onsubmit = function() {
+          iframeWin.postMessage(myMessage.value, "https://www.google.com");
+          return false;
+        };
+      };
+    </script>
+  </body>
+</html>

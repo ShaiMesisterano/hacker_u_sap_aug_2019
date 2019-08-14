@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+      <div id="received-message"></div>
+    <script>
+      function displayMessage(evt) {
+          debugger;
+        var message;
+        if (evt.origin !== "http://127.0.0.1:5500") {
+          message = "You are not worthy";
+        } else {
+          message = "I got " + evt.data + " from " + evt.origin;
+        }
+        document.getElementById("received-message").innerHTML = message;
+      }
+
+      if (window.addEventListener) {
+        // For standards-compliant web browsers
+        window.addEventListener("message", displayMessage, false);
+      } else {
+        window.attachEvent("onmessage", displayMessage);
+      }
+    </script>
+  </body>
+</html>

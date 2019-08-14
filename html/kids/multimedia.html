@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Multimedia</title>
+    <style>
+      h1 {
+        color: pink;
+      }
+      div h1 {
+        color: blue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: lightblue;
+      }
+      #title1 {
+        color: brown;
+        border: solid 3px green;
+      }
+      .titles {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      id="title1"
+      class="titles"
+      style="color: red; font-size: 40px; text-decoration: underline"
+    >
+      Sample Video
+    </h1>
+    <h1 id="title1">Another ID</h1>
+    <div>
+      <h1>Title2</h1>
+    </div>
+    <!-- <video src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" controls></video> -->
+    <video src="video/video1.mp4" controls></video>
+    <img
+      src="http://mhaifafc.com/pics/2019-2020/%D7%A7%D7%9E%D7%A4%D7%99%D7%99%D7%9F%20%D7%9E%D7%A0%D7%95%D7%99%D7%99%D7%9D/%D7%A4%D7%95%D7%A4-%D7%90%D7%A4-%D7%9E%D7%9E%D7%9C%D7%90%D7%99%D7%9D-%D7%90%D7%AA-%D7%A1%D7%9E%D7%99.png"
+    />
+
+    <script>
+      async function init() {
+        const response = await fetch("http://localhost:3000");
+        const data = await response.text();
+        console.log(data);
+      }
+      init();
+    </script>
+  </body>
+</html>
