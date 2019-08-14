@@ -1,7 +1,7 @@
 <h1>Front End Exercise</h1>
 <ol>
     <li>Create a login form with user name and password input fields</li>
-    <li>Allow the user to submit a form <u>in another domain</u> using each one of the following methods:</li>
+    <li>Allow the user to submit the form <u>to another domain</u> using each one of the following methods:</li>
     <ol>
         <li>HTML's <code>&lt;form&gt;</code> submission</li>
         <li>Javascript's <code>fetch</code> function. Use Fiddler for adding an <code>Access-Control-Allow-Origin</code> http header to each response in order to allow CORS*</li>
