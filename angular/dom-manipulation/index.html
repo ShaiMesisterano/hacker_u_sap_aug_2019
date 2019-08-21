@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <h3>Students:</h3>
+    <table id="students">
+
+    </table>
+    <h4>Add New Student:</h4>
+    <form onsubmit="addRow(event)">
+        <input type="text" id="student-name" placeholder="Enter student's name" />
+        <input type="number" id="grade" placeholder="Enter student's grade" />
+        <button id="submit">Add</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
